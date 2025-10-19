@@ -5,6 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Text Artist Bio Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom style for the 3D text effect */
+      .text-3d-effect {
+        text-shadow: 
+          /* Dark shadow layers for extrusion on a dark background */
+          1px 1px 0px #0f172a, /* dark slate-900 */
+          2px 2px 0px #0f172a,
+          3px 3px 0px #0f172a,
+          4px 4px 0px #0f172a,
+          /* A slightly offset, blurred shadow for depth */
+          5px 5px 2px rgba(0,0,0,0.5),
+          /* Subtle glow effect to tie in with the theme */
+          0 0 5px rgba(204, 0, 255, 0.2), /* Fuchsia glow */
+          0 0 15px rgba(0, 255, 255, 0.2); /* Cyan glow */
+      }
+    </style>
 
 <link rel="stylesheet" href="/index.css">
   <script type="importmap">
@@ -17,8 +34,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DY35znpr.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-m7Kqen6u.css">
+  <script type="module" crossorigin src="/my-bio/assets/index-CpQuM9Z3.js"></script>
 </head>
   <body class="bg-slate-900">
     <div id="root"></div>
